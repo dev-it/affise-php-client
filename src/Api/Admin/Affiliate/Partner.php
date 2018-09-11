@@ -13,8 +13,8 @@
 
         public function getAffiliateList($params = []) {
             return $this->get(implode("/", [
-                $this->getEndpointAdminBase() . "s",
-                $this->getEndpointBase(),
+                $this->getEndpointAdminBase(),
+                $this->getEndpointBase() . "s",
             ]),
             $params);
         }
